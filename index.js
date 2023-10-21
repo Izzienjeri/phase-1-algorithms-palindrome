@@ -1,9 +1,29 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let isItPalindrome = true;
+  for ( let i = 0; i < word.length / 2; i++) {
+    if (word[i] != word[word.length -1 -i]) {
+      isItPalindrome = false;
+      break;
+    }
+  }
+  if (isItPalindrome) {
+    return (true)
+  } else {
+    return (false);
+  }
+
+
 }
 
 /* 
   Add your pseudocode here
+  declare function isPalindrome() that takes in a string as an argument 
+  initialize a variable isItPalindrome to true
+  loop over half of the letters in the passed in string:
+  if current letter is not equal to the corresponding one on the other end of the word, return false
+  bring in an if statement that returns true if isItPalindrome is true and false if otherwise
+
 */
 
 /*
